@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-5">
             <h1 className="text-2xl font-medium text-white">Portfolio</h1>
             <ul className="flex gap-8 text-white font-medium">
                 <li className="hover:text-purple-500 cursor-pointer transition duration-300">About</li>
