@@ -11,5 +11,5 @@ const Home = () => {
     </div>
   )
 }
-
+// skills
 export default Home
