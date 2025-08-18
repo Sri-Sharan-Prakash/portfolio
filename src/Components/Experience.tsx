@@ -2,7 +2,11 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div className='mt-23'>
+        <div>
+            <h1 className='text-3xl font-medium text-white text-center'>Experience</h1> 
+        </div>
+    </div>
   )
 }
 
