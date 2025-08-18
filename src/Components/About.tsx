@@ -6,7 +6,7 @@ const About = () => {
     const el=useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["FULL STACK DEVELOPER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER"],
+            strings: ["Full Stack Developer", "Frontend Developer", "Backend Developer"],
             startDelay:300,
             typeSpeed: 100,
             backDelay:150,
@@ -19,14 +19,15 @@ const About = () => {
     <div>
         <div className="flex items-center justify-between w-full h-[500px] relative">
              <DotLottieReact
-                className="absolute left-[340px] h-72"
+                className="absolute left-[360px] h-72 opacity-50"
                 src="https://lottie.host/40605679-be13-4687-a3d1-3a631cb7d986/N4IpnU9keL.lottie"
                 loop
                 autoplay
              />
         <div className="flex flex-col gap-2 justify-center h-full relative z-10">
             <h1 className="text-white text-4xl font-bold">HI, I am SRI SHARAN PRAKASH</h1>
-            <h1 className="text-4xl text-white">I am a <span className="text-purple-500 transition duration-300" ref={el}/></h1>
+            <h1 className="text-4xl text-white">I am a <span className="text-purple-500 font-medium transition duration-300" ref={el}/></h1>
+            <h1 className="text-gray-400 text-wrap text-lg font-medium w-[500px]">I am a passionate developer with a keen interest in building scalable web applications and working with modern technologies.</h1>
         </div>
         <div className="h-[400px] w-[400px] relative z-10">
             <DotLottieReact
