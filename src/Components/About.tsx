@@ -5,7 +5,7 @@ import Typed from "typed.js"
 const About = () => {
     const el=useRef(null);
     useEffect(() => {
-        const typed = new Typed(el.current, {
+        new Typed(el.current, {
             strings: ["Full Stack Developer", "Frontend Developer", "Backend Developer"],
             startDelay:300,
             typeSpeed: 100,
