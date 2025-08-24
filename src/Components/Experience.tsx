@@ -1,5 +1,4 @@
-import React from 'react'
-
+import {motion} from 'framer-motion'
 const Experience = () => {
   const experience = [{name:"Full Stack Developer Intern",image:"https://media.licdn.com/dms/image/v2/D4D0BAQH_IP1079LmJw/company-logo_200_200/B4DZfJ4.i.GgAM-/0/1751438846907/skillminetech_logo?e=2147483647&v=beta&t=KDX34xzIxdJ6Q20ZKvWoEmtqu4xN5hLJ_SJZ21ODpRI",description:"Worked in their major product comPLYment where I have contributed to the development of key features and improvements. Had developed admin-side functionalities like CRUD in both frontend and backend.", company:"Skillmine Technologies Pvt Ltd", duration:"Jan 2025 - July 2025",stipend:"7500",skills:" • React • Mongo DB • Node Js • Express • Nest Js • Tailwind CSS"},{name:"Frontend Developer Intern",company:"Urtripo Aviation",duration:"Jan 2023 -Jan 2024",image:"https://urtripo-aviation.com/public/assets/images/resources/logo-small.png",description:"Worked on the development of the company website, where I was responsible for creating and maintaining the frontend components using React.js and Tailwind CSS. I also collaborated with the design team to ensure a responsive and user-friendly interface.",skills:"• React • Tailwind css • Html • Javascript • Bootstrap"}];
   return (
@@ -10,7 +9,12 @@ const Experience = () => {
         </div>
         <div className='mt-10 ml-40 mr-40'>
             {experience.map((exp, index) => (
-              <div className='relative'>
+              <motion.div
+                initial={{opacity:0,translateY:"60%"}}
+                whileInView={{opacity:1,translateY:"0%"}}
+                transition={{duration:1,delay:index*0.3}}
+                 key={index}
+                    className='relative'>
                   <div className='absolute inset-0 bg-blue-500 rounded-lg blur opacity-50'></div>
                 <div key={index} className='flex flex-col mb-8 bg-gray-900 gap-5 p-4 rounded-lg relative'>
                   <span className='absolute left-[-30px] top-5 z-10 rounded-full h-3 w-3 bg-purple-500'></span>
@@ -29,7 +33,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-            </div>
+            </motion.div>
             ))}
         </div>
     </div>
