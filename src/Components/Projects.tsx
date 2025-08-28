@@ -2,13 +2,14 @@ import React from "react"; // Import React
 import { motion } from "framer-motion";
 import ParticleBackground from "./ParticleBackground";
 import ProjectCard from "./ProjectCard";
+import ecommerce from "../../src/assets/image.png"
 
 
 // Placeholder Icons
 const ReactIcon = () =>{
   return(
     <div className="w-full h-full">
-      <img src="../../src/assets/image.png" className="w-full h-full rounded-xl" alt="" />
+      <img src={ecommerce} className="w-full h-full rounded-xl" alt="" />
     </div>
   )
 }
