@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion for animations
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu visibility
@@ -19,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-gray-900/80 py-4 px-4 md:px-10 lg:px-20'> {/* Added bg-color for better contrast */}
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <h1 className="text-2xl font-medium text-white">Portfolio</h1>
+        <Link to="/"><h1 className="text-2xl font-medium text-white">Portfolio</h1></Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 lg:gap-8 text-white font-medium"> {/* Hidden on small, flex on md and up */}
@@ -31,10 +32,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
+          <Link to="https://github.com/sri-sharan-prakash">
         <button className="hidden md:block border border-purple-500 rounded-full px-4 py-2 text-purple-500 cursor-pointer hover:bg-purple-500 font-medium hover:text-white transition duration-400">
           Github Profile
         </button>
+          </Link>
 
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden flex items-center">
