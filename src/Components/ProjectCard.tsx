@@ -1,6 +1,5 @@
 import React, { useRef } from "react"; // Import React
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 export interface ProjectCardProps {
   title: string;
@@ -16,8 +15,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   technologies,
-  demoUrl,
-  githubUrl,
   icon,
 }) => {
   const ref = useRef<HTMLDivElement>(null);

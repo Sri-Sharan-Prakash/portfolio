@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { BsGithub } from 'react-icons/bs';
-import { CgMail } from 'react-icons/cg';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { CiMail } from 'react-icons/ci';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,14 +21,14 @@ const Footer = () => {
 
       {/* Optional: Add social media links here if you want them in the footer */}
       <div className='flex gap-6 mt-6'>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-500 transition-colors duration-300">
-          <i className="fab fa-linkedin text-2xl"></i> {/* Requires Font Awesome */}
+        <a href="https://linkedin.com/in/sri-sharan-prakash-s-898511373" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-500 transition-colors duration-300">
+          <i className="fab fa-linkedin text-2xl"><BsLinkedin/></i> {/* Requires Font Awesome */}
         </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-500 transition-colors duration-300">
+        <a href="https://github.com/Sri-Sharan-Prakash" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-500 transition-colors duration-300">
           <i className="fab fa-github text-2xl"><BsGithub/></i> {/* Requires Font Awesome */}
         </a>
         <a href="mailto:srisharanprakash2003@example.com" className="text-gray-400 hover:text-purple-500 transition-colors duration-300">
-          <i className="fas fa-envelope text-2xl"><CgMail/></i> {/* Requires Font Awesome */}
+          <i className="fas fa-envelope text-2xl"><CiMail/></i> {/* Requires Font Awesome */}
         </a>
         {/* Add more social links as needed */}
       </div>

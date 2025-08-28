@@ -11,12 +11,7 @@ const ReactIcon = () =>{
       <img src="../../src/assets/image.png" className="w-full h-full rounded-xl" alt="" />
     </div>
   )
-} 
-const NextJSIcon = () => <span style={{ fontSize: '24px' }}>▶️</span>;
-const NodeJSIcon = () => <span style={{ fontSize: '24px' }}>📦</span>;
-const TypeScriptIcon = () => <span style={{ fontSize: '24px' }}>🔵</span>;
-const PythonIcon = () => <span style={{ fontSize: '24px' }}>🐍</span>;
-const FirebaseIcon = () => <span style={{ fontSize: '24px' }}>🔥</span>;
+}
 
 // Project Data
 const projects = [
@@ -48,8 +43,8 @@ const Projects: React.FC = () => {
               title={project.title}
               description={project.description}
               technologies={project.technologies}
-              demoUrl={project.demoUrl}
-              githubUrl={project.githubUrl}
+              // demoUrl={project.demoUrl}
+              // githubUrl={project.githubUrl}
               icon={<project.icon />}
               index={index}
             />
