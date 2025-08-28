@@ -45,7 +45,7 @@ const About = () => {
           <div className="mt-5">
             <Link to="https://drive.google.com/file/d/1-1BchPH5bbEkykNiKQj1LTReX07JoTO3/view">
             <button className="border-1 border-purple-500 rounded-full px-4 py-2 text-purple-500 cursor-pointer hover:bg-purple-500 font-medium hover:text-white transition duration-500">
-              Download Resume
+                My Resume
             </button>
             </Link>
           </div>
