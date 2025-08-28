@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+#root{
+    scroll-behavior: smooth;
+}
+
+#about,#skills{
+    scroll-margin-top: 100px;
+}

@@ -16,14 +16,14 @@ const About = () => {
         })
     },[])
   return (
-    <div className="mb-10 mt-5">
+    <div className="mb-10 mt-20">
         <div className="flex items-center justify-between w-full h-[500px] relative">
-             {/* <DotLottieReact
+             <DotLottieReact
                 className="absolute left-[360px] h-72 opacity-50"
                 src="https://lottie.host/40605679-be13-4687-a3d1-3a631cb7d986/N4IpnU9keL.lottie"
                 loop
                 autoplay
-             /> */}
+             />
         <div className="flex flex-col gap-2 justify-center h-full relative z-10">
             <h1 className="text-white text-4xl font-bold">HI, I am SRI SHARAN PRAKASH</h1>
             <h1 className="text-4xl text-white">I am a <span className="text-purple-500 font-medium transition duration-300" ref={el}/></h1>

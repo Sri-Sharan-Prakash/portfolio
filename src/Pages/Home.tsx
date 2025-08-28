@@ -64,22 +64,15 @@ const Home = () => {
       {/* --- ADDED SEMI-TRANSPARENT OVERLAY --- */}
       <div className="fixed inset-0 -z-10" />
 
-      {/* Navbar is rendered directly here, at the top level of the Home component */}
       <Navbar/> 
-
-      {/* Main content container. 
-          ADD pt-20 (or pt-16, pt-24 depending on your Navbar's height)
-          to prevent content from being covered by the fixed navbar.
-          `pt-20` is usually a good starting point for a Navbar with `py-5`.
-      */}
       <div className='relative z-10 pt-20 pb-5 px-4 md:px-10 lg:px-20 flex flex-col gap-10 md:gap-20'>
-        {/* The Navbar motion.div was removed from here as it's now fixed and directly rendered */}
 
         <motion.div
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+          id="about"
         >
           <About/>
         </motion.div>
@@ -89,6 +82,7 @@ const Home = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+          id="skills"
         >
           <Skills/>
         </motion.div>
@@ -98,6 +92,7 @@ const Home = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+          id="education"
         >
           <Education/>
         </motion.div>
@@ -107,6 +102,7 @@ const Home = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+          id='experience'
         >
           <Experience/>
         </motion.div>
@@ -116,6 +112,7 @@ const Home = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
+          id="projects"
         >
           <Projects/>
         </motion.div>
