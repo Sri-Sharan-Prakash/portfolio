@@ -7,7 +7,8 @@ import ProjectCard from "./ProjectCard";
 // Placeholder Icons
 const ReactIcon = () =>{
   return(
-    <div>
+    <div className="w-full h-full">
+      <img src="../../src/assets/image.png" className="w-full h-full rounded-xl" alt="" />
     </div>
   )
 } 

@@ -60,13 +60,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       }}
       className="bg-gray-800/70 backdrop-blur-md border border-gray-700 rounded-xl flex flex-col h-full"
     >
-      <div style={{ transform: "translateZ(50px)" }} className="p-6 flex items-start justify-between">
-        <div className="p-3 bg-purple-500/10 text-purple-400 rounded-lg">{icon}</div>
+      {/* <div style={{ transform: "translateZ(50px)" }} className="p-6 gap-4 flex items-start justify-between">
         <div className="flex items-center gap-4 text-gray-400">
           {githubUrl && <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors" aria-label="GitHub"><FiGithub size={24} /></a>}
           {demoUrl && <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors" aria-label="Live Demo"><FiExternalLink size={24} /></a>}
         </div>
-      </div>
+      </div> */}
+        <div className="p-3 w-full h-72 rounded-lg">{icon}</div>
       <div style={{ transform: "translateZ(40px)" }} className="px-6 pb-6 flex-grow flex flex-col">
         <h3 className="text-2xl font-bold mb-2 text-gray-100">{title}</h3>
         <p className="text-gray-400 leading-relaxed flex-grow">{description}</p>
