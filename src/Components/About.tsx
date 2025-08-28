@@ -1,5 +1,6 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Typed from "typed.js";
 
 const About = () => {
@@ -24,13 +25,12 @@ const About = () => {
   return (
     <div className="mb-10 mt-10 md:mt-20 px-4 md:px-0"> {/* Added horizontal padding for small screens */}
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-between w-full min-h-[500px] relative">
-        {/* First Lottie (background/decorative) - Hidden on small screens, shown and positioned on medium/large */}
-        <DotLottieReact
+        {/* <DotLottieReact
           className="hidden md:block md:absolute md:left-[360px] lg:left-[calc(50%-200px)] h-72 opacity-50" // Adjust left for larger screens
           src="https://lottie.host/40605679-be13-4687-a3d1-3a631cb7d986/N4IpnU9keL.lottie"
           loop
           autoplay
-        />
+        /> */}
 
         {/* Text Content */}
         <div className="flex flex-col gap-2 items-center text-center md:items-start md:text-left h-full relative z-10 p-4 md:p-0"> {/* Added padding for text block */}
@@ -43,9 +43,11 @@ const About = () => {
             I am a passionate developer with a keen interest in building scalable web applications and working with modern technologies.
           </h1>
           <div className="mt-5">
+            <Link to="https://drive.google.com/file/d/1-1BchPH5bbEkykNiKQj1LTReX07JoTO3/view">
             <button className="border-1 border-purple-500 rounded-full px-4 py-2 text-purple-500 cursor-pointer hover:bg-purple-500 font-medium hover:text-white transition duration-500">
               Download Resume
             </button>
+            </Link>
           </div>
         </div>
 
